@@ -48,10 +48,38 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
 <body>
 <a class="skip" href="#main" data-i18n="a11y.skip">Skip to content</a>
 
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5a2.12 2.12 0 0 0-3-3L13 8 4.8 6.2a1 1 0 0 0-1 1.7l5.5 3.6-2.4 2.4-2.3-.5a1 1 0 0 0-1 1.6l2.6 2.6 2.6 2.6a1 1 0 0 0 1.6-1l-.5-2.3 2.4-2.4 3.6 5.5a1 1 0 0 0 1.7-1z"/></symbol>
+  <symbol id="i-kaaba" viewBox="0 0 24 24"><path d="M12 2.5 3.5 7v10l8.5 4.5 8.5-4.5V7z"/><path d="M3.5 7 12 11.5 20.5 7M12 11.5V21.5"/><path d="M7.5 9.2v5.3"/></symbol>
+  <symbol id="i-passport" viewBox="0 0 24 24"><rect x="4" y="2.5" width="16" height="19" rx="2.5"/><circle cx="12" cy="10" r="3"/><path d="M9 17.5h6"/></symbol>
+  <symbol id="i-hotel" viewBox="0 0 24 24"><path d="M3 18v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5"/><path d="M3 18h18"/><path d="M6 11V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.5a3 3 0 0 1 0 5"/><path d="M19 20a6 6 0 0 0-3-5.2"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3h2.2c.4 0 .7.3.8.6l.9 3c.1.3 0 .6-.2.8l-1.4 1.3a11 11 0 0 0 5.4 5.4l1.3-1.4c.2-.2.5-.3.8-.2l3 .9c.3.1.6.4.6.8V17c0 2.2-1.8 4-4 4A13.9 13.9 0 0 1 3 7c0-2.2 1.4-4 3.6-4Z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Zm4.6 12.2c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.7-.1-.4-.1-1.1-.4-1.9-.8-1.7-.8-2.8-2.5-2.9-2.6-.1-.2-.7-1-.7-1.9 0-.9.5-1.3.7-1.5.2-.2.4-.3.6-.3h.4c.1 0 .3 0 .5.4l.7 1.6c.1.1.1.3 0 .4-.3.6-.6.6-.5.8.4.7 1 1.3 1.7 1.7.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.5.7c.2.1.3.2.3.3.1.2.1.6-.1 1Z"/></symbol>
+  <symbol id="i-chev-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-chev-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-chev-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M7 4v13M7 17l-3-3M7 17l3-3"/><path d="M17 20V7M17 7l-3 3M17 7l3 3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 7 7.3 5.3a1.5 1.5 0 0 0 1.8 0L20.2 7"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.6 3 8 7 9.5 4-1.5 7-4.9 7-9.5V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.6 12.6 12 21.2 2.8 12V2.8H12l8.6 8.6a1.2 1.2 0 0 1 0 1.2z"/><circle cx="7.5" cy="7.5" r="1.4"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></symbol>
+  <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3a3 3 0 0 0 0 6v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a3 3 0 0 0 0-6Z"/><path d="M14 5v14"/></symbol>
+</svg>
+
 <header class="site-head">
   <div class="wrap head-in">
     <a class="brand" href="#top" aria-label="AB Travels home">
-      <img src="assets/logo.png" alt="AB Travels" width="46" height="46" decoding="async">
+      <img src="assets/logo.png" alt="AB Travels" width="44" height="44" decoding="async">
       <span class="brand-t">
         <strong>AB Travels</strong>
         <small data-i18n="brand.sub">Ahmed Brothers Travels</small>
@@ -59,20 +87,21 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
     </a>
 
     <nav class="nav" id="nav" aria-label="Main">
+      <a href="#search" data-i18n="nav.book">Book</a>
+      <a href="#routes" data-i18n="nav.routes">Popular routes</a>
       <a href="#services" data-i18n="nav.services">Services</a>
       <a href="#why" data-i18n="nav.why">Why us</a>
-      <a href="#how" data-i18n="nav.how">How it works</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
 
     <div class="head-act">
       <button class="lang" id="langBtn" type="button" aria-label="Switch to Urdu">اردو</button>
       <a class="btn btn-wa js-wa head-wa" href="https://wa.me/923143176560" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Zm4.6 12.2c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.7-.1-.4-.1-1.1-.4-1.9-.8-1.7-.8-2.8-2.5-2.9-2.6-.1-.2-.7-1-.7-1.9 0-.9.5-1.3.7-1.5.2-.2.4-.3.6-.3h.4c.1 0 .3 0 .5.4l.7 1.6c.1.1.1.3 0 .4-.3.6-.6.6-.5.8.4.7 1 1.3 1.7 1.7.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.5.7c.2.1.3.2.3.3.1.2.1.6-.1 1Z"/></svg>
+        <svg class="ic" width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg>
         <span data-i18n="cta.wa">WhatsApp</span>
       </a>
       <button class="menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
-        <span></span><span></span><span></span>
+        <svg class="ic" width="22" height="22" aria-hidden="true"><use href="#i-menu"/></svg>
       </button>
     </div>
   </div>
@@ -80,37 +109,39 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
 
 <main id="main">
   <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="hero-glow"></span>
+      <span class="hero-grid"></span>
+    </div>
+
     <div class="wrap hero-in">
       <div class="hero-copy">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Air tickets · Umrah · Visa · Tours</p>
+        <p class="eyebrow">
+          <svg class="ic" width="15" height="15" aria-hidden="true"><use href="#i-star"/></svg>
+          <span data-i18n="hero.eyebrow">Air tickets · Umrah · Visa · Tours</span>
+        </p>
         <h1 data-i18n="hero.h1">Tickets, Umrah and visas — sorted without the runaround.</h1>
         <p class="lead" data-i18n="hero.lead">Send us your route and dates on WhatsApp. We compare fares, share clear options, and hand over a proper e-ticket with an invoice — usually the same day.</p>
-        <div class="hero-btns">
-          <a class="btn btn-wa btn-lg js-wa" href="https://wa.me/923143176560" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Zm4.6 12.2c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.7-.1-.4-.1-1.1-.4-1.9-.8-1.7-.8-2.8-2.5-2.9-2.6-.1-.2-.7-1-.7-1.9 0-.9.5-1.3.7-1.5.2-.2.4-.3.6-.3h.4c.1 0 .3 0 .5.4l.7 1.6c.1.1.1.3 0 .4-.3.6-.6.6-.5.8.4.7 1 1.3 1.7 1.7.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.5.7c.2.1.3.2.3.3.1.2.1.6-.1 1Z"/></svg>
-            <span data-i18n="cta.quote">Get a quote on WhatsApp</span>
-          </a>
-          <a class="btn btn-ghost btn-lg" href="tel:+923143176560">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3h2.2c.4 0 .7.3.8.6l.9 3c.1.3 0 .6-.2.8l-1.4 1.3a11 11 0 0 0 5.4 5.4l1.3-1.4c.2-.2.5-.3.8-.2l3 .9c.3.1.6.4.6.8V17c0 2.2-1.8 4-4 4A13.9 13.9 0 0 1 3 7c0-2.2 1.4-4 3.6-4Z"/></svg>
-            <span>0314-3176560</span>
-          </a>
-        </div>
         <ul class="chips">
-          <li data-i18n="hero.chip1">Same-day quotes</li>
-          <li data-i18n="hero.chip2">Family &amp; group bookings</li>
-          <li data-i18n="hero.chip3">Visa file support</li>
+          <li><svg class="ic" width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.chip1">Same-day quotes</span></li>
+          <li><svg class="ic" width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.chip2">Family &amp; group bookings</span></li>
+          <li><svg class="ic" width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.chip3">Visa file support</span></li>
         </ul>
+        <p class="hero-note">
+          <svg class="ic" width="15" height="15" aria-hidden="true"><use href="#i-shield"/></svg>
+          <span data-i18n="hero.note">Real fares confirmed on WhatsApp — no booking happens on this website.</span>
+        </p>
       </div>
 
       <div class="hero-side">
-        <div class="pass">
-          <div class="pass-head">
+        <div class="pass" aria-hidden="true">
+          <div class="pass-top">
             <span class="pass-tag" data-i18n="pass.tag">Umrah · Return</span>
-            <span class="pass-plane" aria-hidden="true">✈</span>
+            <span class="pass-badge"><i></i><span data-i18n="pass.badge">Live fares</span></span>
           </div>
           <div class="pass-route">
             <div class="pt"><b>KHI</b><small data-i18n="pass.from">Karachi</small></div>
-            <div class="dash" aria-hidden="true"></div>
+            <div class="dash"><span></span><svg class="ic" width="18" height="18"><use href="#i-plane"/></svg><span></span></div>
             <div class="pt"><b>JED</b><small data-i18n="pass.to">Jeddah</small></div>
           </div>
           <div class="pass-grid">
@@ -118,7 +149,306 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
             <div><small data-i18n="pass.fare">Fare</small><b data-i18n="pass.farev">Ask today</b></div>
             <div><small data-i18n="pass.bag">Baggage</small><b dir="ltr">30 kg</b></div>
           </div>
+          <div class="pass-cut"></div>
           <p class="pass-note" data-i18n="pass.note">Sample route — tell us yours and we’ll quote it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap search-wrap">
+    <section class="search-card" id="search" aria-label="Quote search">
+      <div class="sc-tabs" role="tablist" aria-label="Services">
+        <button class="sc-tab is-active" id="tab-flights" type="button" role="tab" aria-selected="true" aria-controls="panel-flights" data-tab="flights">
+          <svg class="ic" width="18" height="18" aria-hidden="true"><use href="#i-plane"/></svg><span data-i18n="sc.tabFlights">Flights</span>
+        </button>
+        <button class="sc-tab" id="tab-umrah" type="button" role="tab" aria-selected="false" aria-controls="panel-umrah" data-tab="umrah" tabindex="-1">
+          <svg class="ic" width="18" height="18" aria-hidden="true"><use href="#i-kaaba"/></svg><span data-i18n="sc.tabUmrah">Umrah</span>
+        </button>
+        <button class="sc-tab" id="tab-visa" type="button" role="tab" aria-selected="false" aria-controls="panel-visa" data-tab="visa" tabindex="-1">
+          <svg class="ic" width="18" height="18" aria-hidden="true"><use href="#i-passport"/></svg><span data-i18n="sc.tabVisa">Visa</span>
+        </button>
+        <button class="sc-tab" id="tab-hotels" type="button" role="tab" aria-selected="false" aria-controls="panel-hotels" data-tab="hotels" tabindex="-1">
+          <svg class="ic" width="18" height="18" aria-hidden="true"><use href="#i-hotel"/></svg><span data-i18n="sc.tabHotels">Hotels</span>
+        </button>
+        <button class="sc-tab" id="tab-tours" type="button" role="tab" aria-selected="false" aria-controls="panel-tours" data-tab="tours" tabindex="-1">
+          <svg class="ic" width="18" height="18" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="sc.tabTours">Tours</span>
+        </button>
+      </div>
+
+      <form class="sc-panel" id="panel-flights" role="tabpanel" aria-labelledby="tab-flights" data-panel="flights" novalidate>
+        <div class="trip-row">
+          <div class="seg" role="group" aria-label="Trip type">
+            <button class="seg-btn is-active" type="button" data-trip="oneway" aria-pressed="true" data-i18n="sc.oneway">One way</button>
+            <button class="seg-btn" type="button" data-trip="return" aria-pressed="false" data-i18n="sc.return">Return</button>
+          </div>
+          <label class="check">
+            <input type="checkbox" id="directOnly">
+            <span class="box" aria-hidden="true"><svg class="ic" width="12" height="12"><use href="#i-check"/></svg></span>
+            <span data-i18n="sc.direct">Direct flights only</span>
+          </label>
+        </div>
+
+        <div class="sc-grid">
+          <div class="route-box" id="routeBox">
+            <button class="fld fld-city" id="fromBtn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="cityPop">
+              <span class="fld-k" data-i18n="sc.from">From</span>
+              <span class="fld-v" id="fromValue" data-empty="true">Select city</span>
+            </button>
+            <button class="swap" id="swapBtn" type="button" aria-label="Swap from and to">
+              <svg class="ic" width="18" height="18" aria-hidden="true"><use href="#i-swap"/></svg>
+            </button>
+            <button class="fld fld-city fld-to" id="toBtn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="cityPop">
+              <span class="fld-k" data-i18n="sc.to">To</span>
+              <span class="fld-v" id="toValue" data-empty="true">Select city</span>
+            </button>
+
+            <div class="pop city-pop" id="cityPop" hidden>
+              <label class="city-search">
+                <svg class="ic" width="16" height="16" aria-hidden="true"><use href="#i-globe"/></svg>
+                <input id="citySearch" type="text" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="cityList" aria-autocomplete="list" placeholder="City or airport code">
+              </label>
+              <div class="city-list" id="cityList" role="listbox" aria-label="Cities"></div>
+            </div>
+          </div>
+
+          <div class="date-box">
+            <button class="fld fld-date" id="depBtn" type="button" aria-haspopup="dialog" aria-expanded="false">
+              <span class="fld-k" data-i18n="sc.depart">Departure</span>
+              <span class="fld-v" id="depValue" data-empty="true">Add date</span>
+            </button>
+            <span class="date-sep" aria-hidden="true"></span>
+            <button class="fld fld-date is-disabled" id="retBtn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-disabled="true">
+              <span class="fld-k" data-i18n="sc.returnDate">Return</span>
+              <span class="fld-v" id="retValue" data-empty="true">Add date</span>
+            </button>
+          </div>
+
+          <div class="pax-cell">
+            <button class="fld fld-pax" id="paxBtn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="paxPop">
+              <span class="fld-k" data-i18n="sc.pax">Travellers &amp; cabin</span>
+              <span class="fld-v"><span id="paxValue">1 traveller</span><span class="dot">·</span><span id="cabinValue">Economy</span></span>
+            </button>
+
+            <div class="pop pax-pop" id="paxPop" hidden>
+              <div class="stepper" data-step="adults">
+                <div><b data-i18n="sc.adults">Adults</b><small data-i18n="sc.adultsNote">12 years and above</small></div>
+                <div class="counter">
+                  <button type="button" data-step="adults" data-dir="-1" aria-label="Fewer adults">−</button>
+                  <output id="outAdults">1</output>
+                  <button type="button" data-step="adults" data-dir="1" aria-label="More adults">+</button>
+                </div>
+              </div>
+              <div class="stepper" data-step="children">
+                <div><b data-i18n="sc.children">Children</b><small data-i18n="sc.childrenNote">2 to 11 years</small></div>
+                <div class="counter">
+                  <button type="button" data-step="children" data-dir="-1" aria-label="Fewer children">−</button>
+                  <output id="outChildren">0</output>
+                  <button type="button" data-step="children" data-dir="1" aria-label="More children">+</button>
+                </div>
+              </div>
+              <div class="stepper" data-step="infants">
+                <div><b data-i18n="sc.infants">Infants</b><small data-i18n="sc.infantsNote">Under 2 years</small></div>
+                <div class="counter">
+                  <button type="button" data-step="infants" data-dir="-1" aria-label="Fewer infants">−</button>
+                  <output id="outInfants">0</output>
+                  <button type="button" data-step="infants" data-dir="1" aria-label="More infants">+</button>
+                </div>
+              </div>
+              <p class="pop-k" data-i18n="sc.cabin">Cabin</p>
+              <div class="cabin-list">
+                <button type="button" data-cabin="Economy" aria-checked="true" data-i18n="sc.economy">Economy</button>
+                <button type="button" data-cabin="Premium economy" aria-checked="false" data-i18n="sc.premium">Premium economy</button>
+                <button type="button" data-cabin="Business" aria-checked="false" data-i18n="sc.business">Business</button>
+                <button type="button" data-cabin="First" aria-checked="false" data-i18n="sc.first">First</button>
+              </div>
+              <button class="btn btn-navy pop-done" id="paxDone" type="button" data-i18n="sc.done">Done</button>
+            </div>
+          </div>
+
+          <button class="btn btn-amber sc-submit" type="submit">
+            <svg class="ic" width="19" height="19" aria-hidden="true"><use href="#i-wa"/></svg>
+            <span data-i18n="sc.quote">Get quote on WhatsApp</span>
+          </button>
+        </div>
+
+        <p class="sc-alert" id="scAlert" role="alert" hidden></p>
+        <p class="sc-note">
+          <svg class="ic" width="15" height="15" aria-hidden="true"><use href="#i-clock"/></svg>
+          <span data-i18n="sc.note">Fares are live and change daily — we confirm the best price for your dates on WhatsApp.</span>
+        </p>
+      </form>
+
+      <form class="sc-panel gen-panel" id="panel-umrah" role="tabpanel" aria-labelledby="tab-umrah" data-panel="umrah" hidden novalidate>
+        <div class="gen-grid">
+          <label class="gfield">
+            <span data-i18n="sc.package">Package</span>
+            <select data-field required>
+              <option value="Umrah" data-i18n="sc.umrahEco">Economy</option>
+              <option value="Umrah Standard" data-i18n="sc.umrahStd">Standard</option>
+              <option value="Umrah Premium" data-i18n="sc.umrahPrem">Premium</option>
+              <option value="Umrah Custom" data-i18n="sc.umrahCustom">Custom plan</option>
+            </select>
+          </label>
+          <label class="gfield">
+            <span data-i18n="sc.month">Travel month</span>
+            <input type="date" data-field data-date required min="">
+          </label>
+          <label class="gfield">
+            <span data-i18n="sc.travellersLabel">Travellers</span>
+            <input type="number" data-field min="1" max="60" value="2" required>
+          </label>
+          <button class="btn btn-amber gen-btn" type="submit">
+            <svg class="ic" width="19" height="19" aria-hidden="true"><use href="#i-wa"/></svg>
+            <span data-i18n="sc.quoteUmrah">Get Umrah quote</span>
+          </button>
+        </div>
+        <p class="gen-err" role="alert" hidden data-i18n="sc.required">Please fill the highlighted fields.</p>
+      </form>
+
+      <form class="sc-panel gen-panel" id="panel-visa" role="tabpanel" aria-labelledby="tab-visa" data-panel="visa" hidden novalidate>
+        <div class="gen-grid">
+          <label class="gfield">
+            <span data-i18n="sc.visaType">Visa type</span>
+            <select data-field required>
+              <option value="Visit visa" data-i18n="sc.visaVisit">Visit visa</option>
+              <option value="Umrah visa" data-i18n="sc.visaUmrah">Umrah visa</option>
+              <option value="Family visit" data-i18n="sc.visaFamily">Family visit</option>
+              <option value="Student visa" data-i18n="sc.visaStudent">Student visa</option>
+              <option value="Work visa" data-i18n="sc.visaWork">Work visa</option>
+            </select>
+          </label>
+          <label class="gfield">
+            <span data-i18n="sc.country">Destination country</span>
+            <input type="text" data-field placeholder="e.g. Saudi Arabia" data-i18n-ph="sc.phCountry" required minlength="2">
+          </label>
+          <label class="gfield">
+            <span data-i18n="sc.applicants">Applicants</span>
+            <input type="number" data-field min="1" max="30" value="1" required>
+          </label>
+          <button class="btn btn-amber gen-btn" type="submit">
+            <svg class="ic" width="19" height="19" aria-hidden="true"><use href="#i-wa"/></svg>
+            <span data-i18n="sc.quoteVisa">Get visa quote</span>
+          </button>
+        </div>
+        <p class="gen-err" role="alert" hidden data-i18n="sc.required">Please fill the highlighted fields.</p>
+      </form>
+
+      <form class="sc-panel gen-panel" id="panel-hotels" role="tabpanel" aria-labelledby="tab-hotels" data-panel="hotels" hidden novalidate>
+        <div class="gen-grid gen-grid-4">
+          <label class="gfield">
+            <span data-i18n="sc.city">City</span>
+            <input type="text" data-field placeholder="Makkah / Madinah" data-i18n-ph="sc.phCity" required minlength="2">
+          </label>
+          <label class="gfield">
+            <span data-i18n="sc.checkin">Check-in</span>
+            <input type="date" data-field data-date required min="">
+          </label>
+          <label class="gfield">
+            <span data-i18n="sc.checkout">Check-out</span>
+            <input type="date" data-field data-date required min="">
+          </label>
+          <label class="gfield">
+            <span data-i18n="sc.guests">Guests &amp; rooms</span>
+            <input type="number" data-field min="1" max="40" value="2" required>
+          </label>
+          <button class="btn btn-amber gen-btn" type="submit">
+            <svg class="ic" width="19" height="19" aria-hidden="true"><use href="#i-wa"/></svg>
+            <span data-i18n="sc.quoteHotel">Get hotel quote</span>
+          </button>
+        </div>
+        <p class="gen-err" role="alert" hidden data-i18n="sc.required">Please fill the highlighted fields.</p>
+      </form>
+
+      <form class="sc-panel gen-panel" id="panel-tours" role="tabpanel" aria-labelledby="tab-tours" data-panel="tours" hidden novalidate>
+        <div class="gen-grid">
+          <label class="gfield">
+            <span data-i18n="sc.destination">Destination</span>
+            <input type="text" data-field placeholder="e.g. Istanbul" data-i18n-ph="sc.phDest" required minlength="2">
+          </label>
+          <label class="gfield">
+            <span data-i18n="sc.travelDate">Travel date</span>
+            <input type="date" data-field data-date required min="">
+          </label>
+          <label class="gfield">
+            <span data-i18n="sc.groupSize">Group size</span>
+            <input type="number" data-field min="1" max="40" value="2" required>
+          </label>
+          <button class="btn btn-amber gen-btn" type="submit">
+            <svg class="ic" width="19" height="19" aria-hidden="true"><use href="#i-wa"/></svg>
+            <span data-i18n="sc.quoteTour">Get tour quote</span>
+          </button>
+        </div>
+        <p class="gen-err" role="alert" hidden data-i18n="sc.required">Please fill the highlighted fields.</p>
+      </form>
+    </section>
+
+    <ul class="support">
+      <li>
+        <span class="sup-ico"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#i-clock"/></svg></span>
+        <div><b data-i18n="sup.t1">Same-day quotes</b><span data-i18n="sup.d1">Send your route before noon and we usually reply the same day.</span></div>
+      </li>
+      <li>
+        <span class="sup-ico"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#i-wa"/></svg></span>
+        <div><b data-i18n="sup.t2">7 days a week</b><span data-i18n="sup.d2">WhatsApp, call or email — we answer every day.</span></div>
+      </li>
+      <li>
+        <span class="sup-ico"><svg class="ic" width="20" height="20" aria-hidden="true"><use href="#i-ticket"/></svg></span>
+        <div><b data-i18n="sup.t3">Invoice with every booking</b><span data-i18n="sup.d3">A clear invoice for company claims and visa files.</span></div>
+      </li>
+    </ul>
+  </div>
+
+  <section class="sec routes" id="routes">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker" data-i18n="routes.kicker">Popular routes</p>
+          <h2 data-i18n="routes.h2">Fares people ask for every week</h2>
+        </div>
+        <p class="sec-lead" data-i18n="routes.lead">Pick a route to start your quote — or type any city from Pakistan, the Gulf or beyond.</p>
+      </div>
+
+      <div class="routes-grid" id="routesGrid"></div>
+      <p class="routes-note">
+        <svg class="ic" width="15" height="15" aria-hidden="true"><use href="#i-tag"/></svg>
+        <span data-i18n="routes.note">Fares change daily. We confirm the live price for your dates on WhatsApp.</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="sec umrah-sec" id="umrah">
+    <div class="wrap">
+      <div class="umrah">
+        <div class="umrah-bg" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="umrah-copy">
+          <p class="kicker kicker-light" data-i18n="um.kicker">Umrah season</p>
+          <h2 data-i18n="um.h2">Umrah packages — ticket, visa, hotel and transport together</h2>
+          <p data-i18n="um.lead">Family and group Umrah with near-Haram hotels. Tell us your dates and we build the package around your budget.</p>
+          <ul class="um-list">
+            <li><svg class="ic" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="um.l1">Visa and documents handled</span></li>
+            <li><svg class="ic" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="um.l2">Makkah &amp; Madinah hotels</span></li>
+            <li><svg class="ic" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="um.l3">Airport transfers included</span></li>
+          </ul>
+          <button class="btn btn-white" type="button" data-open-tab="umrah">
+            <svg class="ic" width="18" height="18" aria-hidden="true"><use href="#i-kaaba"/></svg>
+            <span data-i18n="um.cta">Plan my Umrah</span>
+          </button>
+        </div>
+
+        <div class="um-card" aria-hidden="true">
+          <div class="um-card-top">
+            <span class="um-tag"><svg class="ic" width="14" height="14"><use href="#i-kaaba"/></svg><span data-i18n="um.cardTag">Umrah package</span></span>
+            <span class="um-days" data-i18n="um.cardNights">14 nights</span>
+          </div>
+          <p class="um-route"><b>KHI</b><span class="um-line"></span><svg class="ic" width="16" height="16"><use href="#i-plane"/></svg><span class="um-line"></span><b>JED</b></p>
+          <p class="um-meta" data-i18n="um.cardMeta">Ticket · Visa · Hotel · Transport</p>
+          <div class="um-price">
+            <div><small data-i18n="um.cardFrom">From</small><b data-i18n="um.cardPrice">Ask today</b></div>
+            <span class="um-dot"></span>
+            <div><small data-i18n="um.cardPax">Per person</small><b data-i18n="um.cardPaxv">On request</b></div>
+          </div>
+          <p class="um-small" data-i18n="um.cardNote">Sample — final price depends on dates and hotel.</p>
         </div>
       </div>
     </div>
@@ -126,38 +456,42 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
 
   <section class="sec" id="services">
     <div class="wrap">
-      <p class="kicker" data-i18n="services.kicker">What we do</p>
-      <h2 data-i18n="services.h2">Everything for one trip, in one place</h2>
-      <p class="sec-lead" data-i18n="services.lead">One team for the ticket, the visa file, the hotel and the airport pickup — so you are not chasing three different people.</p>
+      <div class="sec-head">
+        <div>
+          <p class="kicker" data-i18n="services.kicker">What we do</p>
+          <h2 data-i18n="services.h2">Everything for one trip, in one place</h2>
+        </div>
+        <p class="sec-lead" data-i18n="services.lead">One team for the ticket, the visa file, the hotel and the airport pickup — so you are not chasing three different people.</p>
+      </div>
 
       <div class="cards">
         <article class="card">
-          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 14l20-7-8 15-2-6-10-2Z"/></svg></span>
+          <span class="ico" aria-hidden="true"><svg class="ic" width="22" height="22"><use href="#i-plane"/></svg></span>
           <h3 data-i18n="s1.t">Air tickets</h3>
           <p data-i18n="s1.d">Domestic and international, one-way or return. We compare airlines and quote the total — no hidden add-ons.</p>
         </article>
         <article class="card">
-          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3.3 0 6 2.6 6 5.9 0 4.1-4.4 8.6-6 10.3-1.6-1.7-6-6.2-6-10.3C6 5.6 8.7 3 12 3Z"/><path d="M9 21h6"/></svg></span>
+          <span class="ico" aria-hidden="true"><svg class="ic" width="22" height="22"><use href="#i-kaaba"/></svg></span>
           <h3 data-i18n="s2.t">Umrah &amp; Hajj</h3>
           <p data-i18n="s2.d">Ticket, visa, hotel and transport in one package — with family and group options.</p>
         </article>
         <article class="card">
-          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="10" r="2.4"/><path d="M8 17h8"/></svg></span>
+          <span class="ico" aria-hidden="true"><svg class="ic" width="22" height="22"><use href="#i-passport"/></svg></span>
           <h3 data-i18n="s3.t">Visa services</h3>
           <p data-i18n="s3.d">Tourist, visit, family and student files. We check documents, guide the form and track appointments.</p>
         </article>
         <article class="card">
-          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5"/><path d="M3 18h18"/><path d="M6 11V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></svg></span>
+          <span class="ico" aria-hidden="true"><svg class="ic" width="22" height="22"><use href="#i-hotel"/></svg></span>
           <h3 data-i18n="s4.t">Hotel booking</h3>
           <p data-i18n="s4.d">Makkah, Madinah and worldwide stays — near-Haram options for every budget.</p>
         </article>
         <article class="card">
-          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11Z"/></svg></span>
+          <span class="ico" aria-hidden="true"><svg class="ic" width="22" height="22"><use href="#i-pin"/></svg></span>
           <h3 data-i18n="s5.t">Tours &amp; transport</h3>
           <p data-i18n="s5.d">Airport transfers, city tours and custom family itineraries.</p>
         </article>
         <article class="card">
-          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.5a3 3 0 0 1 0 5"/><path d="M19 20a6 6 0 0 0-3-5.2"/></svg></span>
+          <span class="ico" aria-hidden="true"><svg class="ic" width="22" height="22"><use href="#i-users"/></svg></span>
           <h3 data-i18n="s6.t">Group &amp; family tickets</h3>
           <p data-i18n="s6.d">Wedding groups, corporate travel and student groups — seats held together.</p>
         </article>
@@ -172,27 +506,28 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
         <h2 data-i18n="why.h2">Straight answers, no runaround</h2>
         <ul class="points">
           <li>
-            <span class="tick" aria-hidden="true">✓</span>
+            <span class="tick" aria-hidden="true"><svg class="ic" width="13" height="13"><use href="#i-check"/></svg></span>
             <div><b data-i18n="w1">Fares compared across airlines</b><span data-i18n="w1d">We don’t quote the first fare we see — we check a few and tell you the difference.</span></div>
           </li>
           <li>
-            <span class="tick" aria-hidden="true">✓</span>
+            <span class="tick" aria-hidden="true"><svg class="ic" width="13" height="13"><use href="#i-check"/></svg></span>
             <div><b data-i18n="w2">Everything on WhatsApp</b><span data-i18n="w2d">No app, no login, no office visit needed. Your chat is your file.</span></div>
           </li>
           <li>
-            <span class="tick" aria-hidden="true">✓</span>
+            <span class="tick" aria-hidden="true"><svg class="ic" width="13" height="13"><use href="#i-check"/></svg></span>
             <div><b data-i18n="w3">Paperwork, sorted</b><span data-i18n="w3d">Document checklist, form filling and appointment reminders for visa files.</span></div>
           </li>
           <li>
-            <span class="tick" aria-hidden="true">✓</span>
+            <span class="tick" aria-hidden="true"><svg class="ic" width="13" height="13"><use href="#i-check"/></svg></span>
             <div><b data-i18n="w4">Invoice with every booking</b><span data-i18n="w4d">A clear invoice for company claims and visa files — not just a ticket screenshot.</span></div>
           </li>
         </ul>
       </div>
       <div class="why-card">
+        <span class="wc-ico" aria-hidden="true"><svg class="ic" width="24" height="24"><use href="#i-wa"/></svg></span>
         <p class="wc-k" data-i18n="wc.k">Fastest way</p>
         <p class="wc-t" data-i18n="wc.t">One message with route, dates and passengers is enough to start.</p>
-        <a class="btn btn-navy js-wa" href="https://wa.me/923143176560" target="_blank" rel="noopener" data-i18n="cta.quote2">Message us on WhatsApp</a>
+        <a class="btn btn-wa js-wa" href="https://wa.me/923143176560" target="_blank" rel="noopener" data-i18n="cta.quote2">Message us on WhatsApp</a>
         <p class="wc-note"><span data-i18n="wc.or">or call</span> <a href="tel:+923103311199">0310-3311199</a></p>
       </div>
     </div>
@@ -219,7 +554,7 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
 
         <ul class="clist">
           <li>
-            <span class="ci" aria-hidden="true"><svg class="solid" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Zm4.6 12.2c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.7-.1-.4-.1-1.1-.4-1.9-.8-1.7-.8-2.8-2.5-2.9-2.6-.1-.2-.7-1-.7-1.9 0-.9.5-1.3.7-1.5.2-.2.4-.3.6-.3h.4c.1 0 .3 0 .5.4l.7 1.6c.1.1.1.3 0 .4-.3.6-.6.6-.5.8.4.7 1 1.3 1.7 1.7.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.5.7c.2.1.3.2.3.3.1.2.1.6-.1 1Z"/></svg></span>
+            <span class="ci" aria-hidden="true"><svg class="ic" width="20" height="20"><use href="#i-wa"/></svg></span>
             <div>
               <small data-i18n="c.wa">WhatsApp</small>
               <a href="https://wa.me/923143176560" target="_blank" rel="noopener">0314-3176560</a>
@@ -227,28 +562,28 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
             </div>
           </li>
           <li>
-            <span class="ci" aria-hidden="true"><svg class="solid" viewBox="0 0 24 24"><path d="M6.6 3h2.2c.4 0 .7.3.8.6l.9 3c.1.3 0 .6-.2.8l-1.4 1.3a11 11 0 0 0 5.4 5.4l1.3-1.4c.2-.2.5-.3.8-.2l3 .9c.3.1.6.4.6.8V17c0 2.2-1.8 4-4 4A13.9 13.9 0 0 1 3 7c0-2.2 1.4-4 3.6-4Z"/></svg></span>
+            <span class="ci" aria-hidden="true"><svg class="ic" width="20" height="20"><use href="#i-phone"/></svg></span>
             <div>
               <small data-i18n="c.phone1">Mobile</small>
               <a href="tel:+923143176560">0314-3176560</a>
             </div>
           </li>
           <li>
-            <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span>
+            <span class="ci" aria-hidden="true"><svg class="ic" width="20" height="20"><use href="#i-phone"/></svg></span>
             <div>
               <small data-i18n="c.phone2">Alternate number</small>
               <a href="tel:+923103311199">0310-3311199</a>
             </div>
           </li>
           <li>
-            <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 7 7.3 5.3a1.5 1.5 0 0 0 1.8 0L20.2 7"/></svg></span>
+            <span class="ci" aria-hidden="true"><svg class="ic" width="20" height="20"><use href="#i-mail"/></svg></span>
             <div>
               <small data-i18n="c.email">Email</small>
               <a href="mailto:ahmedbrothers053@gmail.com">ahmedbrothers053@gmail.com</a>
             </div>
           </li>
           <li>
-            <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></svg></span>
+            <span class="ci" aria-hidden="true"><svg class="ic" width="20" height="20"><use href="#i-clock"/></svg></span>
             <div>
               <small data-i18n="c.hoursT">Timing</small>
               <span data-i18n="c.hours">Message anytime — we reply during business hours, 7 days a week.</span>
@@ -290,7 +625,7 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
 <footer class="site-foot">
   <div class="wrap foot-in">
     <div class="foot-brand">
-      <img src="assets/logo.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+      <img src="assets/logo.png" alt="" width="42" height="42" loading="lazy" decoding="async">
       <div>
         <strong>AB Travels</strong>
         <p data-i18n="footer.about">Air tickets, Umrah and Hajj packages, visa files, hotels and tours.</p>
@@ -298,10 +633,17 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
     </div>
     <div class="foot-links">
       <b data-i18n="footer.links">Quick links</b>
+      <a href="#routes" data-i18n="nav.routes">Popular routes</a>
       <a href="#services" data-i18n="nav.services">Services</a>
       <a href="#why" data-i18n="nav.why">Why us</a>
-      <a href="#how" data-i18n="nav.how">How it works</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+    <div class="foot-links">
+      <b data-i18n="footer.services">Services</b>
+      <a href="#search" data-i18n="footer.f1">Flight tickets</a>
+      <a href="#umrah" data-i18n="footer.f2">Umrah &amp; Hajj</a>
+      <a href="#search" data-i18n="footer.f3">Visa files</a>
+      <a href="#search" data-i18n="footer.f4">Hotels &amp; tours</a>
     </div>
     <div class="foot-contact">
       <b data-i18n="footer.contact">Contact</b>
@@ -312,13 +654,23 @@ try { if (localStorage.getItem("abt-lang") === "ur") { document.documentElement.
   </div>
   <div class="wrap foot-base">
     <span>© <span id="yr">2026</span> AB Travels. <span data-i18n="footer.rights">All rights reserved.</span></span>
+    <span class="foot-note" data-i18n="footer.note">Quotes only — tickets are issued after confirmation.</span>
   </div>
 </footer>
 
 <div class="mobar">
-  <a class="btn btn-wa js-wa" href="https://wa.me/923143176560" target="_blank" rel="noopener" data-i18n="cta.wa">WhatsApp</a>
-  <a class="btn btn-ghost mobar-call" href="tel:+923143176560" data-i18n="cta.call">Call now</a>
+  <a class="btn btn-wa js-wa" href="https://wa.me/923143176560" target="_blank" rel="noopener">
+    <svg class="ic" width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg>
+    <span data-i18n="cta.wa">WhatsApp</span>
+  </a>
+  <a class="btn btn-ghost mobar-call" href="tel:+923143176560">
+    <svg class="ic" width="18" height="18" aria-hidden="true"><use href="#i-phone"/></svg>
+    <span data-i18n="cta.call">Call now</span>
+  </a>
 </div>
+
+<div class="cal-pop" id="calPop" role="dialog" aria-label="Choose date" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <script src="main.js"></script>
 </body>
