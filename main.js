@@ -901,13 +901,43 @@
 
   /* ------------------------------------------------------------------- Tabs --- */
 
+  /* Scroll only the tab strip horizontally — never the page (mobile used to jump). */
+  function scrollTabIntoView(tab) {
+    var strip = tab.parentNode;
+    if (!strip) return;
+    var tabBox = tab.getBoundingClientRect();
+    var stripBox = strip.getBoundingClientRect();
+    var overflowLeft = stripBox.left - tabBox.left;
+    var overflowRight = tabBox.right - stripBox.right;
+    if (overflowLeft > 0) {
+      strip.scrollLeft -= overflowLeft;
+    } else if (overflowRight > 0) {
+      strip.scrollLeft += overflowRight;
+    }
+  }
+
+  function revealSearch() {
+    if (!searchCard) return;
+    var header = document.querySelector(".site-head");
+    var offset = (header ? header.getBoundingClientRect().height : 0) + 12;
+    var box = searchCard.getBoundingClientRect();
+    var viewportH = window.innerHeight;
+    if (box.top >= offset && box.top + Math.min(box.height, viewportH - offset) <= viewportH) return;
+    var top = box.top + window.pageYOffset - offset;
+    try {
+      window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+    } catch (e) {
+      window.scrollTo(0, Math.max(0, top));
+    }
+  }
+
   function selectTab(name, moveFocus) {
     $$(".sc-tab").forEach(function (tab) {
       var selected = tab.getAttribute("data-tab") === name;
       tab.classList.toggle("is-active", selected);
       tab.setAttribute("aria-selected", String(selected));
       tab.tabIndex = selected ? 0 : -1;
-      if (selected && moveFocus) tab.scrollIntoView({ block: "nearest", inline: "center" });
+      if (selected && moveFocus) scrollTabIntoView(tab);
     });
 
     $$(".sc-panel").forEach(function (panel) {
@@ -940,7 +970,7 @@
   $$("[data-open-tab]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       selectTab(btn.getAttribute("data-open-tab"), true);
-      searchCard.scrollIntoView({ behavior: "smooth", block: "center" });
+      revealSearch();
     });
   });
 
@@ -1436,9 +1466,9 @@
     paintDates();
     hideAlert();
     selectTab("flights", true);
-    searchCard.scrollIntoView({ behavior: "smooth", block: "center" });
+    revealSearch();
     showToast(dict()["routes.picked"]);
-    setTimeout(function () { depBtn.focus(); }, 420);
+    setTimeout(function () { depBtn.focus({ preventScroll: true }); }, 420);
   });
 
   /* ------------------------------------------------------------------- Menu --- */
