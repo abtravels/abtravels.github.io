@@ -1323,8 +1323,14 @@
   /* --------------------------------------------------------------- WhatsApp --- */
 
   function openWA(url) {
-    var win = window.open(url, "_blank", "noopener");
-    if (!win) window.location.href = url;
+    // The "noopener" feature makes window.open return null even on success,
+    // so open normally and detach the opener instead.
+    var win = window.open(url, "_blank");
+    if (win) {
+      try { win.opener = null; } catch (e) {}
+    } else {
+      window.location.href = url;
+    }
     showToast(dict()["form.sent"]);
   }
 
